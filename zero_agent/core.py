@@ -11,7 +11,7 @@ from langchain_ollama import ChatOllama
 from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langgraph.prebuilt import create_react_agent
-from duckduckgo_search import DDGS
+from ddgs import DDGS 
 from rich.console import Console
 
 console = Console()
