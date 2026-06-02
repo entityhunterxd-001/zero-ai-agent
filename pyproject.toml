@@ -1,0 +1,24 @@
+[project]
+name = "zero-ai-agent"
+version = "1.0.0"
+description = "Autonomous AI Web Scraping Agent with Rust & LangGraph"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "langchain>=0.1.0",
+    "langchain-ollama>=0.1.0",
+    "langgraph>=0.0.20",
+    "ddgs>=9.14.4",         
+    "schedule>=1.2.0",
+]
+
+[project.scripts]
+zero-ai-agent = "zero_agent.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["zero_agent"]

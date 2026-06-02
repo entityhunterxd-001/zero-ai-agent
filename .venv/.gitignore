@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+*.egg-info/
+
+# Rust
+target/
+*.exe
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific (keep your secrets out!)
+*.txt
+memory.json
+chat_history.json
+schedules.json
