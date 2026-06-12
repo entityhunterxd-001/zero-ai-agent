@@ -56,3 +56,7 @@ def build_rust_scraper(project_dir: Path):
         except subprocess.CalledProcessError as e:
             console.print(f"[bold red]❌ Compilation failed:\n{e.stderr.decode()}[/bold red]")
             raise SystemExit(1)
+
+
+
+            
